@@ -14,6 +14,7 @@
 		375F736E247547D1002339CB /* goalpost_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 375F736C247547D1002339CB /* goalpost_app.xcdatamodeld */; };
 		375F7370247547D3002339CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F736F247547D3002339CB /* Assets.xcassets */; };
 		375F7373247547D3002339CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F7371247547D3002339CB /* LaunchScreen.storyboard */; };
+		377CB033247A639E0058FB71 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377CB032247A639E0058FB71 /* GoalType.swift */; };
 		37D5D0E52477F234004EA84F /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5D0E42477F234004EA84F /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		375F736F247547D3002339CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375F7372247547D3002339CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		375F7374247547D3002339CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		377CB032247A639E0058FB71 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		37D5D0E42477F234004EA84F /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 		375F737C24754826002339CB /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				377CB032247A639E0058FB71 /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				375F7368247547D1002339CB /* GoalsVC.swift in Sources */,
 				375F7364247547D1002339CB /* AppDelegate.swift in Sources */,
+				377CB033247A639E0058FB71 /* GoalType.swift in Sources */,
 				375F736E247547D1002339CB /* goalpost_app.xcdatamodeld in Sources */,
 				37D5D0E52477F234004EA84F /* GoalCell.swift in Sources */,
 				375F7366247547D1002339CB /* SceneDelegate.swift in Sources */,

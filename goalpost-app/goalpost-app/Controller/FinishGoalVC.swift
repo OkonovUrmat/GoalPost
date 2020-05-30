@@ -28,6 +28,13 @@ class FinishGoalVC: UIViewController {
     }
     
     @IBAction func createGoalBtnWasPressed(_ sender: Any) {
+        if pointTxtField.text != "" {
+            self.save { (complete) in
+                if complete {
+                    dismiss(animated: true, completion: nil)
+                }
+            }
+        }
     }
     
     func save(completion: (_ finished: Bool) -> ()) {
@@ -41,6 +48,7 @@ class FinishGoalVC: UIViewController {
         
         do {
             try managedContext.save()
+            print("Succesfully saved data.")
             completion(true)
         } catch {
             debugPrint("Could not save \(error.localizedDescription)")

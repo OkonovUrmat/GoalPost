@@ -38,5 +38,13 @@ class FinishGoalVC: UIViewController {
         goal.goalType = goalType.rawValue
         goal.goalCompletionValue = Int32(pointTxtField.text!)!
         goal.goalProgress = Int32(0)
+        
+        do {
+            try managedContext.save()
+            completion(true)
+        } catch {
+            debugPrint("Could not save \(error.localizedDescription)")
+            completion(false)
+        }
     }
 }

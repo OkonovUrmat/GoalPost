@@ -27,6 +27,8 @@ extension UIViewController {
         
         guard let presentedViewController = presentedViewController else { return }
         
+        viewControllerToPresent.modalPresentationStyle = .fullScreen
+        
         presentedViewController.dismiss(animated: false) {
             self.view.window?.layer.add(transition, forKey: kCATransition)
             self.present(viewControllerToPresent, animated: false, completion: nil)

@@ -40,7 +40,7 @@
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EfE-Am-njA"/>
-                                            <segue destination="n4g-u9-rss" kind="presentation" id="tyz-W3-MbS"/>
+                                            <segue destination="n4g-u9-rss" kind="modal" modalPresentationStyle="fullScreen" id="tyz-W3-MbS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -182,11 +182,11 @@
             <objects>
                 <viewController storyboardIdentifier="CreateGoalVC" id="n4g-u9-rss" customClass="CreateGoalVC" customModule="goalpost_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hg3-g7-eQH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFT-hE-8gg">
-                                <rect key="frame" x="0.0" y="-44" width="414" height="90"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njb-2S-LGM">
                                         <rect key="frame" x="157.5" y="57" width="99" height="25"/>
@@ -223,7 +223,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PqS-uk-Wy5">
-                                <rect key="frame" x="20" y="66" width="374" height="300"/>
+                                <rect key="frame" x="20" y="110" width="374" height="300"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oZ6-b8-k4w">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="209.5"/>
@@ -274,7 +274,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4E-yn-dc0">
-                                <rect key="frame" x="0.0" y="748" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="jLh-hx-pVU"/>
@@ -302,6 +302,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3FM-cF-4ly"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6kh-cz-Ty9"/>
                     <connections>
                         <outlet property="goalTextView" destination="oZ6-b8-k4w" id="MVW-Ui-XGH"/>
                         <outlet property="longTermBtn" destination="wdF-mf-tWc" id="0oX-ba-MUD"/>

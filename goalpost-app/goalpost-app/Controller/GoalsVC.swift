@@ -63,6 +63,19 @@ extension GoalsVC: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension GoalsVC {
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        
+        managedContext.delete(goals[indexPath.row])
+        
+        do {
+            try managedContext.save()
+            print("Succesfully removed goal!")
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
+    
     func fetch(completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
         
